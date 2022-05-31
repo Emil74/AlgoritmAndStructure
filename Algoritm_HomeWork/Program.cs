@@ -10,7 +10,19 @@ namespace Algoritm_HomeWork
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Задании");
+            Console.Write(" Введите Урок 4 задание 1 или 2 ");
+            int dz = int.Parse(Console.ReadLine());
+            switch (dz)
+            {
+                case 1:
+                    HomWorkk1.NewMethod2();
+                    break;
+                case 2:
+                    HomeWorkk2.NewMethod2();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
