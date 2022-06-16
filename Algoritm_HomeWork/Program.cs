@@ -9,35 +9,27 @@ namespace Algoritm_HomeWork
     class Program
     {
         static void Main(string[] args)
-        {          
-    
-            var tree = new Tree<int>();
-              tree.Add(4);
-              tree.Add(1);
-              tree.Add(3);
-              tree.Add(6);
-              tree.Add(5);
-              tree.Add(7);
-              tree.Add(9);
-              tree.Add(8);
-              tree.Add(10);
-            
-           
-            foreach (var item in tree.Preorder())
+        {
+
+            Console.Write("Введите Урок (4 или 5) ");
+            int urok = int.Parse(Console.ReadLine());
+            switch (urok)
             {
-                Console.Write(item + ", ");
+                case 4:
+                    Console.Write("Введите задание (1 или 2) - ");
+                    int dz = int.Parse(Console.ReadLine());
+                    if(dz==1)
+                    HomeWork1.Work1();
+                    if(dz==2)
+                        HomeWork2.Work2();
+                    break;
+                case 5:
+                    Lesson5.lesson5();
+                    break;
+                default:
+                    break;
+                    
             }
-            Console.WriteLine("\n");
-            Console.Write("Введите значение - ");
-            int a = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("BFS-->");
-            tree.bfs(a);
-            Console.WriteLine("\n");
-            Console.WriteLine("DFS-->");
-            tree.dfs(a);
-
-            Console.ReadLine();
         }
 
     }
