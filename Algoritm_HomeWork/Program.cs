@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Algoritm_HomeWork.lesson2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,26 @@ namespace Algoritm_HomeWork
     {
         static void Main(string[] args)
         {
+            List<ILesson> task = new List<ILesson>()
+            {
+            new Lesson5(),
+            new HomeWork2(),
+            new Work1()
+            };
 
-            Console.Write("Введите Урок (4 или 5) ");
+            foreach (ILesson lesson in task)
+                Console.WriteLine($"Введите '{lesson.Name}' для вызова задания '{lesson.Description}' ");
+
+            Console.Write("Input task number - ");
+            string taskNumber = Console.ReadLine();
+            foreach (ILesson lesson in task)
+            {
+                if (lesson.Name == taskNumber)
+                    lesson.Run();
+            }
+            
+
+         /*   Console.Write("Введите Урок (4 или 5) ");
             int urok = int.Parse(Console.ReadLine());
             switch (urok)
             {
@@ -29,7 +48,7 @@ namespace Algoritm_HomeWork
                 default:
                     break;
                     
-            }
+            }*/
         }
 
     }
