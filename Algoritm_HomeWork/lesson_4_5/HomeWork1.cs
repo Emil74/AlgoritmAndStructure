@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Algoritm_HomeWork
 {
-    class HomWorkk1
+    class HomeWork1
     {
-        public static void NewMethod2()
+        public static void Work1()
         {
             Random rnd = new Random();
             HashSet<int> hashset = new HashSet<int>();

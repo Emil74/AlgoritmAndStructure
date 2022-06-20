@@ -6,10 +6,28 @@ using System.Threading.Tasks;
 
 namespace Algoritm_HomeWork
 {
-    class HomeWorkk2
+    class HomeWork2:ILesson
     {
-        //Дз-2
-        public static void NewMethod2()
+        public string Name => "4";
+
+        public string Description => @"1.двоичного дерева поиска с операциями добавления, удаления, поиска
+                                       2.Заполните массив и HashSet случайными строками";
+
+       
+
+        public void Run()
+        {
+            
+            Console.Write("Введите задание (1  -  2) - ");
+            int dz = int.Parse(Console.ReadLine());
+            if (dz == 1)
+                HomeWork1.Work1();
+            if (dz == 2)
+                HomeWork2.Work2();
+           
+            }
+
+        public static void Work2()
         {
             ConsoleKeyInfo key;
             var tree = new Tree<int>();

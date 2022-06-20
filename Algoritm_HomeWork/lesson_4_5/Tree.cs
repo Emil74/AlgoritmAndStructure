@@ -25,6 +25,14 @@ namespace Algoritm_HomeWork
             Count++;
         }
 
+        public void dfs(T a)
+        {
+            Root.dfs(a, Root);
+        }
+        public void bfs(T a)
+        {
+            Root.bfs(a, Root);
+        }
 
         public void Delete(T data)
         {

@@ -17,6 +17,70 @@ namespace Algoritm_HomeWork
 		{
 			Data = data;
 		}
+
+		int number = 0;
+		int number1 = 0;
+		public void bfs(T b, Node<T> node)
+		{
+			Queue<Node<T>> q = new Queue<Node<T>>();
+			q.Enqueue(node);
+			while (q.Count > 0)
+			{
+
+				node = q.Dequeue();
+				//	Console.WriteLine(node.Data + " ");
+				if (node.Data.CompareTo(b) == 0)
+				{
+					number1++;
+					Console.ForegroundColor = ConsoleColor.Green;
+					Console.WriteLine($"{b}  найден --> уровен {number1} равен {node}");
+					Console.ForegroundColor = ConsoleColor.White;
+					return;
+				}
+				else
+				{
+					number1++;
+					Console.WriteLine($"{b}  не найден --> уровен {number1} равен {node}");
+					if (node.Left != null)
+						q.Enqueue(node.Left);
+					if (node.Right != null)
+						q.Enqueue(node.Right);
+				}
+			}
+		}
+
+		public void dfs(T b, Node<T> node)
+		{
+			var list = new List<T>();
+
+
+
+			if (node == null)
+				return;
+
+
+
+
+			if (node.Data.CompareTo(b) == 0)
+			{
+				number++;
+				Console.ForegroundColor = ConsoleColor.Green;
+				Console.WriteLine($"{b}  найден --> уровен {number} равен {node}");
+				Console.ForegroundColor = ConsoleColor.White;
+				return;
+
+			}
+			else
+			{
+				number++;
+				Console.WriteLine($"{b}  не найден --> уровен {number} равен {node}");
+				dfs(b, node.Left);
+				dfs(b, node.Right);
+				
+			}
+
+		}
+
 		public List<T> Preorder(Node<T> node)
 		{
 
