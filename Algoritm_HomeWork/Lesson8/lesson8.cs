@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algoritm_HomeWork.Lesson8
 {
-   public class lesson8 : ILesson
+    public class lesson8 : ILesson
     {
         public string Name => "8";
 
@@ -18,13 +18,13 @@ namespace Algoritm_HomeWork.Lesson8
 
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write(arr[i]+" ");
+                Console.Write(arr[i] + " ");
             }
-           Task8.Sort(arr, arr.Length);
+            lesson_8.Sort(arr);
             Console.WriteLine();
             Console.WriteLine("Сортировка ");
             for (int i = 0; i < arr.Length; ++i)
-                Console.Write(arr[i]+" ");
+                Console.Write(arr[i] + " ");
             Console.ReadLine();
         }
     }
