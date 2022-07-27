@@ -32,7 +32,7 @@ namespace Algoritm_HomeWork
                 if (lesson.Name == taskNumber)
                     lesson.Run();
             }
-                     
+
         }
 
     }

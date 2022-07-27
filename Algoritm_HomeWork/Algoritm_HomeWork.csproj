@@ -258,7 +258,7 @@
     <Compile Include="lesson2\ILinkedList.cs" />
     <Compile Include="lesson2\Work1.cs" />
     <Compile Include="Lesson8\lesson8.cs" />
-    <Compile Include="Lesson8\Task8.cs" />
+    <Compile Include="Lesson8\lesson_8.cs" />
     <Compile Include="lesson_3\Struct_Class.cs" />
     <Compile Include="lesson_3\Struct_Class_Performance.cs" />
     <Compile Include="lesson_4_5\HomeWork1.cs" />
