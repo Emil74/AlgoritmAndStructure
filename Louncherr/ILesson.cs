@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algoritm_HomeWork
+namespace Louncherr
 {
-   public interface ILesson
+    internal interface ILesson
     {
         string Name { get; }
         string Description { get; }

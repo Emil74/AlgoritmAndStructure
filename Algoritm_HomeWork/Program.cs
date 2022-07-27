@@ -1,5 +1,6 @@
 ﻿using Algoritm_HomeWork.lesson_3;
 using Algoritm_HomeWork.lesson2;
+using Algoritm_HomeWork.Lesson6;
 using Algoritm_HomeWork.Lesson8;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,8 @@ namespace Algoritm_HomeWork
             new HomeWork2(),
             new Work1(),
             new Struct_Class(),
-            new lesson8()
+            new lesson8(),
+            new Work6()
             };
 
             foreach (ILesson lesson in task)
@@ -27,6 +29,7 @@ namespace Algoritm_HomeWork
 
             Console.Write("Input task number - ");
             string taskNumber = Console.ReadLine();
+
             foreach (ILesson lesson in task)
             {
                 if (lesson.Name == taskNumber)
