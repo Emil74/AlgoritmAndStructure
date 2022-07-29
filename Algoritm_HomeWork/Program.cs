@@ -1,6 +1,7 @@
 ﻿using Algoritm_HomeWork.lesson_3;
 using Algoritm_HomeWork.lesson2;
 using Algoritm_HomeWork.Lesson6;
+using Algoritm_HomeWork.Lesson7;
 using Algoritm_HomeWork.Lesson8;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,8 @@ namespace Algoritm_HomeWork
             new Work1(),
             new Struct_Class(),
             new lesson8(),
-            new Work6()
+            new Work6(),
+            new HomeWork7()
             };
 
             foreach (ILesson lesson in task)

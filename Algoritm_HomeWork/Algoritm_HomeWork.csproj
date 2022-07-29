@@ -259,6 +259,8 @@
     <Compile Include="lesson2\Work1.cs" />
     <Compile Include="Lesson6\Louncher.cs" />
     <Compile Include="Lesson6\Work6.cs" />
+    <Compile Include="Lesson7\Board.cs" />
+    <Compile Include="Lesson7\HomeWork7.cs" />
     <Compile Include="Lesson8\lesson8.cs" />
     <Compile Include="Lesson8\lesson_8.cs" />
     <Compile Include="lesson_3\Struct_Class.cs" />
